@@ -4,7 +4,7 @@
     <meta charset=="UTF-8">
     <title>Module 11- html/css homework</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 <div class="container">
@@ -13,14 +13,26 @@
             <h1>Latitude</h1>
         </div>
         <div class="col-md-6">
-            <select id="nav-select">
-                <option value="comparison">comparison</option>
-                <option value="data">data</option>
-                <option value="Home">Home</option>
-                <option value="Temp" a href="file:///C:/UCFLM20190409DATA/UCF%20Data%20Bootcamp/nicolebrands.github.io/temp.html">Temp</option>                <option value="Humidity">Humidity</option>
-                <option value="Cloudiness">Cloudiness</option>
-                <option value="Speed">Speed</option>
-            </select>
+            <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                <!-- <div class="navbar-header"> -->
+                    <ul class="nav navbar-nav">
+                        <li><a href="comparison.html">comparison</a></li>
+                        <li><a href="dataframe.html">data</a></li>
+                        <li class="active"><a href="index.html">Home</a></li>
+                        <!-- <li class="nav-item dropdown"> -->
+                            <!-- <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" id="navbarDropdown"  -->
+                            <!-- role="button" data-toggle="dropdown aria-haspopup="true" aria-expanded="false">Dropdown</a> -->
+                            <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdown"> -->
+                                <li><a href="temp.html">Temp</a></li>
+                                <li><a href="humidity.html">Humidity</a></li>
+                                <li><a href="cloudiness.html">Cloudiness</a></li>
+                                <li><a href="speed.html">Speed</a></li>
+                            </div>
+                        <!-- </li> -->
+                    </ul>
+                </div>    
+            </nav>
         </div>  
     </div>  
     <div class="row">
@@ -29,12 +41,19 @@
         </div>
     </div>
     <div class="row">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJIP_4ihU6IJfBchhUgWq55hHhxDROG6vqU0Lbd5FZj9PzsYNH0g">
+        <div class="col-md-6">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJIP_4ihU6IJfBchhUgWq55hHhxDROG6vqU0Lbd5FZj9PzsYNH0g">
+        </div>
+        <div class="col-md-6">
+            <img src="https://media.istockphoto.com/photos/technical-financial-graph-on-technology-abstract-background-picture-id542074036?k=6&m=542074036&s=612x612&w=0&h=UdAFFPoTMe8jWwLHsR9W3i5kLJGFoQK60lSKGpMN3ns=">
+        </div>
     </div>   
     <div class="row"> 
-        <div class="col-md-6">
+        <div class="col-md-12">
         <strong><p>
             This is a comparison of how different weather aspects change relative to position from the equator. 
+            For example, we will look at city latitudes regarding humidity, cloudiness, windspeed, and max temp.
+            This analyis might help one decide where to vacation if the weather will be a major influence on trip activites. 
         </strong></p>
         </div>
     </div>
